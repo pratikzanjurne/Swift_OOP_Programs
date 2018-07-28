@@ -1,0 +1,42 @@
+{
+  "Pratik" : {
+    "Address" : {
+      "Zip" : "415010",
+      "State" : "Maharashtra",
+      "City" : "Mumbai"
+    },
+    "Phone number" : 9689364545,
+    "First Name" : "Pratik",
+    "Last Name" : "Zanjurne"
+  },
+  "Prasad" : {
+    "Address" : {
+      "State" : "Maharashtra",
+      "Zip" : "415011",
+      "City" : "Satara"
+    },
+    "Phone number" : 7038939349,
+    "First Name" : "Prasad",
+    "Last Name" : "Zanjurne"
+  },
+  "Mohit" : {
+    "Address" : {
+      "State" : "Maharashtra",
+      "Zip" : "415511",
+      "City" : "Islampur"
+    },
+    "Phone number" : 9545787777,
+    "First Name" : "Mohit",
+    "Last Name" : "Jadhav"
+  },
+  "Amit" : {
+    "First Name" : "Amit",
+    "Phone number" : 9665284545,
+    "Last Name" : "Ghorpade",
+    "Address" : {
+      "Zip" : "415510",
+      "State" : "Maharashtra",
+      "City" : "Matyapur"
+    }
+  }
+}
