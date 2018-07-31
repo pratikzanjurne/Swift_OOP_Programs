@@ -1,0 +1,14 @@
+{
+  "Amit" : {
+    "age" : 23,
+    "mobileNo" : 9623997791,
+    "id" : 1,
+    "name" : "Amit"
+  },
+  "Sandesh" : {
+    "name" : "Sandesh",
+    "age" : 26,
+    "mobileNo" : 9689364545,
+    "id" : 2
+  }
+}

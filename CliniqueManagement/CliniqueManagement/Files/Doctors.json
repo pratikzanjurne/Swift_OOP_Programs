@@ -1,0 +1,14 @@
+{
+  "1" : {
+    "specialization" : "M.D",
+    "id" : 1,
+    "availability" : "AM",
+    "name" : "Pratik"
+  },
+  "5" : {
+    "name" : "Prasad",
+    "specialization" : "M.D",
+    "id" : 5,
+    "availability" : "AM"
+  }
+}

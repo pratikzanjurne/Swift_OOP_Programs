@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A561C0821107CDF00B14F11 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C0721107CDF00B14F11 /* main.swift */; };
+		0A561C0F21107D0A00B14F11 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C0E21107D0A00B14F11 /* Doctor.swift */; };
+		0A561C1121107DA600B14F11 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C1021107DA600B14F11 /* Patient.swift */; };
+		0A561C1321107E8400B14F11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C1221107E8400B14F11 /* Constants.swift */; };
+		0A561C192110831B00B14F11 /* CliniqueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C182110831B00B14F11 /* CliniqueManager.swift */; };
+		0A561C1B2110989300B14F11 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C1A2110989300B14F11 /* Appointment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A561C0221107CDF00B14F11 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A561C0421107CDF00B14F11 /* CliniqueManagement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CliniqueManagement; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A561C0721107CDF00B14F11 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0A561C0E21107D0A00B14F11 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		0A561C1021107DA600B14F11 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		0A561C1221107E8400B14F11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0A561C1521107F0900B14F11 /* Doctors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Doctors.json; sourceTree = "<group>"; };
+		0A561C1621107F2100B14F11 /* Patients.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Patients.json; sourceTree = "<group>"; };
+		0A561C182110831B00B14F11 /* CliniqueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CliniqueManager.swift; sourceTree = "<group>"; };
+		0A561C1A2110989300B14F11 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A561C0121107CDF00B14F11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A561BFB21107CDF00B14F11 = {
+			isa = PBXGroup;
+			children = (
+				0A561C0621107CDF00B14F11 /* CliniqueManagement */,
+				0A561C0521107CDF00B14F11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A561C0521107CDF00B14F11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A561C0421107CDF00B14F11 /* CliniqueManagement */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A561C0621107CDF00B14F11 /* CliniqueManagement */ = {
+			isa = PBXGroup;
+			children = (
+				0A561C1421107EC300B14F11 /* Files */,
+				0A561C0721107CDF00B14F11 /* main.swift */,
+				0A561C1021107DA600B14F11 /* Patient.swift */,
+				0A561C0E21107D0A00B14F11 /* Doctor.swift */,
+				0A561C1221107E8400B14F11 /* Constants.swift */,
+				0A561C182110831B00B14F11 /* CliniqueManager.swift */,
+				0A561C1A2110989300B14F11 /* Appointment.swift */,
+			);
+			path = CliniqueManagement;
+			sourceTree = "<group>";
+		};
+		0A561C1421107EC300B14F11 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A561C1521107F0900B14F11 /* Doctors.json */,
+				0A561C1621107F2100B14F11 /* Patients.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A561C0321107CDF00B14F11 /* CliniqueManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A561C0B21107CDF00B14F11 /* Build configuration list for PBXNativeTarget "CliniqueManagement" */;
+			buildPhases = (
+				0A561C0021107CDF00B14F11 /* Sources */,
+				0A561C0121107CDF00B14F11 /* Frameworks */,
+				0A561C0221107CDF00B14F11 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CliniqueManagement;
+			productName = CliniqueManagement;
+			productReference = 0A561C0421107CDF00B14F11 /* CliniqueManagement */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A561BFC21107CDF00B14F11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Pratik Zanjurne";
+				TargetAttributes = {
+					0A561C0321107CDF00B14F11 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A561BFF21107CDF00B14F11 /* Build configuration list for PBXProject "CliniqueManagement" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A561BFB21107CDF00B14F11;
+			productRefGroup = 0A561C0521107CDF00B14F11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A561C0321107CDF00B14F11 /* CliniqueManagement */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A561C0021107CDF00B14F11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A561C0F21107D0A00B14F11 /* Doctor.swift in Sources */,
+				0A561C0821107CDF00B14F11 /* main.swift in Sources */,
+				0A561C1121107DA600B14F11 /* Patient.swift in Sources */,
+				0A561C1B2110989300B14F11 /* Appointment.swift in Sources */,
+				0A561C1321107E8400B14F11 /* Constants.swift in Sources */,
+				0A561C192110831B00B14F11 /* CliniqueManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A561C0921107CDF00B14F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A561C0A21107CDF00B14F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		0A561C0C21107CDF00B14F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA9MN6BHWV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		0A561C0D21107CDF00B14F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA9MN6BHWV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A561BFF21107CDF00B14F11 /* Build configuration list for PBXProject "CliniqueManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A561C0921107CDF00B14F11 /* Debug */,
+				0A561C0A21107CDF00B14F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A561C0B21107CDF00B14F11 /* Build configuration list for PBXNativeTarget "CliniqueManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A561C0C21107CDF00B14F11 /* Debug */,
+				0A561C0D21107CDF00B14F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A561BFC21107CDF00B14F11 /* Project object */;
+}
