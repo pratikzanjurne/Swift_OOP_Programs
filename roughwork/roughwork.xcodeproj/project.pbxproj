@@ -7,16 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4762F2210B1B5100CCEB7B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4762F1210B1B5100CCEB7B /* main.swift */; };
-		0A4762F9210B1B8000CCEB7B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4762F8210B1B8000CCEB7B /* Person.swift */; };
-		0A4762FB210B1F1900CCEB7B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4762FA210B1F1900CCEB7B /* Address.swift */; };
-		0AD8D0B3210ED037000D61D8 /* AddressBookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8D0B2210ED037000D61D8 /* AddressBookManager.swift */; };
-		0AD8D0B6210ED6C4000D61D8 /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8D0B5210ED6C4000D61D8 /* AddressBook.swift */; };
-		0AD8D0CD210EEB48000D61D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8D0CC210EEB48000D61D8 /* Constants.swift */; };
+		0AD8D0C6210EDA95000D61D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8D0C5210EDA95000D61D8 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0A4762EC210B1B5100CCEB7B /* CopyFiles */ = {
+		0AD8D0C0210EDA95000D61D8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -28,17 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A4762EE210B1B5100CCEB7B /* AddressBook */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AddressBook; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A4762F1210B1B5100CCEB7B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		0A4762F8210B1B8000CCEB7B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		0A4762FA210B1F1900CCEB7B /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		0AD8D0B2210ED037000D61D8 /* AddressBookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookManager.swift; sourceTree = "<group>"; };
-		0AD8D0B5210ED6C4000D61D8 /* AddressBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
-		0AD8D0CC210EEB48000D61D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0AD8D0C2210EDA95000D61D8 /* roughwork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = roughwork; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD8D0C5210EDA95000D61D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A4762EB210B1B5100CCEB7B /* Frameworks */ = {
+		0AD8D0BF210EDA95000D61D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,114 +38,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A4762E5210B1B5100CCEB7B = {
+		0AD8D0B9210EDA95000D61D8 = {
 			isa = PBXGroup;
 			children = (
-				0A4762F0210B1B5100CCEB7B /* AddressBook */,
-				0A4762EF210B1B5100CCEB7B /* Products */,
+				0AD8D0C4210EDA95000D61D8 /* roughwork */,
+				0AD8D0C3210EDA95000D61D8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0A4762EF210B1B5100CCEB7B /* Products */ = {
+		0AD8D0C3210EDA95000D61D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A4762EE210B1B5100CCEB7B /* AddressBook */,
+				0AD8D0C2210EDA95000D61D8 /* roughwork */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A4762F0210B1B5100CCEB7B /* AddressBook */ = {
+		0AD8D0C4210EDA95000D61D8 /* roughwork */ = {
 			isa = PBXGroup;
 			children = (
-				0AD8D0B4210ED0D4000D61D8 /* AddressBooks */,
-				0A4762F1210B1B5100CCEB7B /* main.swift */,
-				0A4762F8210B1B8000CCEB7B /* Person.swift */,
-				0A4762FA210B1F1900CCEB7B /* Address.swift */,
-				0AD8D0B2210ED037000D61D8 /* AddressBookManager.swift */,
-				0AD8D0B5210ED6C4000D61D8 /* AddressBook.swift */,
-				0AD8D0CC210EEB48000D61D8 /* Constants.swift */,
+				0AD8D0C5210EDA95000D61D8 /* main.swift */,
 			);
-			path = AddressBook;
-			sourceTree = "<group>";
-		};
-		0AD8D0B4210ED0D4000D61D8 /* AddressBooks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AddressBooks;
+			path = roughwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A4762ED210B1B5100CCEB7B /* AddressBook */ = {
+		0AD8D0C1210EDA95000D61D8 /* roughwork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A4762F5210B1B5100CCEB7B /* Build configuration list for PBXNativeTarget "AddressBook" */;
+			buildConfigurationList = 0AD8D0C9210EDA95000D61D8 /* Build configuration list for PBXNativeTarget "roughwork" */;
 			buildPhases = (
-				0A4762EA210B1B5100CCEB7B /* Sources */,
-				0A4762EB210B1B5100CCEB7B /* Frameworks */,
-				0A4762EC210B1B5100CCEB7B /* CopyFiles */,
+				0AD8D0BE210EDA95000D61D8 /* Sources */,
+				0AD8D0BF210EDA95000D61D8 /* Frameworks */,
+				0AD8D0C0210EDA95000D61D8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AddressBook;
-			productName = AddressBook;
-			productReference = 0A4762EE210B1B5100CCEB7B /* AddressBook */;
+			name = roughwork;
+			productName = roughwork;
+			productReference = 0AD8D0C2210EDA95000D61D8 /* roughwork */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0A4762E6210B1B5100CCEB7B /* Project object */ = {
+		0AD8D0BA210EDA95000D61D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Pratik Zanjurne";
 				TargetAttributes = {
-					0A4762ED210B1B5100CCEB7B = {
+					0AD8D0C1210EDA95000D61D8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0A4762E9210B1B5100CCEB7B /* Build configuration list for PBXProject "AddressBook" */;
+			buildConfigurationList = 0AD8D0BD210EDA95000D61D8 /* Build configuration list for PBXProject "roughwork" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0A4762E5210B1B5100CCEB7B;
-			productRefGroup = 0A4762EF210B1B5100CCEB7B /* Products */;
+			mainGroup = 0AD8D0B9210EDA95000D61D8;
+			productRefGroup = 0AD8D0C3210EDA95000D61D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A4762ED210B1B5100CCEB7B /* AddressBook */,
+				0AD8D0C1210EDA95000D61D8 /* roughwork */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A4762EA210B1B5100CCEB7B /* Sources */ = {
+		0AD8D0BE210EDA95000D61D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4762FB210B1F1900CCEB7B /* Address.swift in Sources */,
-				0AD8D0B6210ED6C4000D61D8 /* AddressBook.swift in Sources */,
-				0A4762F9210B1B8000CCEB7B /* Person.swift in Sources */,
-				0AD8D0CD210EEB48000D61D8 /* Constants.swift in Sources */,
-				0AD8D0B3210ED037000D61D8 /* AddressBookManager.swift in Sources */,
-				0A4762F2210B1B5100CCEB7B /* main.swift in Sources */,
+				0AD8D0C6210EDA95000D61D8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0A4762F3210B1B5100CCEB7B /* Debug */ = {
+		0AD8D0C7210EDA95000D61D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		0A4762F4210B1B5100CCEB7B /* Release */ = {
+		0AD8D0C8210EDA95000D61D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,7 +233,7 @@
 			};
 			name = Release;
 		};
-		0A4762F6210B1B5100CCEB7B /* Debug */ = {
+		0AD8D0CA210EDA95000D61D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -271,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		0A4762F7210B1B5100CCEB7B /* Release */ = {
+		0AD8D0CB210EDA95000D61D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -284,25 +256,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A4762E9210B1B5100CCEB7B /* Build configuration list for PBXProject "AddressBook" */ = {
+		0AD8D0BD210EDA95000D61D8 /* Build configuration list for PBXProject "roughwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A4762F3210B1B5100CCEB7B /* Debug */,
-				0A4762F4210B1B5100CCEB7B /* Release */,
+				0AD8D0C7210EDA95000D61D8 /* Debug */,
+				0AD8D0C8210EDA95000D61D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A4762F5210B1B5100CCEB7B /* Build configuration list for PBXNativeTarget "AddressBook" */ = {
+		0AD8D0C9210EDA95000D61D8 /* Build configuration list for PBXNativeTarget "roughwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A4762F6210B1B5100CCEB7B /* Debug */,
-				0A4762F7210B1B5100CCEB7B /* Release */,
+				0AD8D0CA210EDA95000D61D8 /* Debug */,
+				0AD8D0CB210EDA95000D61D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0A4762E6210B1B5100CCEB7B /* Project object */;
+	rootObject = 0AD8D0BA210EDA95000D61D8 /* Project object */;
 }

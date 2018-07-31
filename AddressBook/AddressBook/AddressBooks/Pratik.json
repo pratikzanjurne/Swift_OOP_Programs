@@ -1,0 +1,12 @@
+{
+  "Pratik" : {
+    "First Name" : "Pratik",
+    "Last Name" : "Zanjurne",
+    "Phone number" : "9689364545",
+    "Address" : {
+      "City" : "Satara",
+      "State" : "Maharashtra",
+      "Zip" : "415010"
+    }
+  }
+}
