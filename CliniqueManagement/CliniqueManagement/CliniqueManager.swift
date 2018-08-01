@@ -3,6 +3,10 @@ protocol CliniqueManagerProtocol {
     func addDoctor()
     func addPatient()
     func takeAppointment()
+    func searchDoctor()
+    func searchPatient()
+    func showDoctors()
+    func showPatients()
 }
 
 class CliniqueManager: CliniqueManagerProtocol {
@@ -58,11 +62,6 @@ class CliniqueManager: CliniqueManagerProtocol {
         doctorInfo["specialization"] = doctor.specialization
         data["\(doctor.id!)"] = doctorInfo as Any
         writeData(data: data, path: Constants.pathDoctors)
-        var dataAppointment:[String:Any] = readData(path: Constants.pathAppointments) as! [String:Any]
-//        let data1 = "{}"
-//        let data2 = Data(base64Encoded: data1)
-//        dataAppointment["\(doctor.id!)"] = data2
-//        writeData(data: dataAppointment, path: Constants.pathAppointments)
         print("Doctor with name \(doctor.name!) added successfully.")
     }
     
@@ -90,23 +89,27 @@ class CliniqueManager: CliniqueManagerProtocol {
     func takeAppointment() {
         var i = 0
         var appointment = Appointment()
+        var idArray = [Int]()
         var data:[String:Any] = readData(path: Constants.pathDoctors) as! [String : Any]
         print("Doctors with these id's are available:")
         for (key,value) in data{
             print(key)
+            idArray.append(Int(key)!)
         }
         print("Enter the doctor Id and date of appointment.")
         print("Enter the Doctor Id")
-        appointment.doctorId = getnumber()
-        print("Enter the date of appointment in format dd-mm-yyyy.")
-        let date = readLine()!
-        let dateFormatterGet = DateFormatter()
-        dateFormatterGet.dateFormat = "dd-MM-yyyy"
-        if dateFormatterGet.date(from: date) != nil {
-            appointment.date = date
-            print(date)
-        } else {
-            print("Enter the valid date in format.")
+        let id = getnumber()
+        if idArray.contains(id){
+            appointment.doctorId = id
+            print("Enter the date of appointment in format dd-mm-yyyy.")
+            let date = readLine()!
+            let dateFormatterGet = DateFormatter()
+            dateFormatterGet.dateFormat = "dd-MM-yyyy"
+            if dateFormatterGet.date(from: date) != nil {
+                appointment.date = date
+            } else {
+                print("Enter the valid date in format.")
+                return
         }
         print("Enter the patient ID.")
         appointment.patientId = getnumber()
@@ -114,7 +117,6 @@ class CliniqueManager: CliniqueManagerProtocol {
         info["patientId"] = appointment.patientId
         var dataAppointment:[String:Any] = readData(path: Constants.pathAppointments) as! [String:Any]
         if dataAppointment.count == 0{
-           // print("No doctors available.")
             var info = [String:Any]()
             info["patientId"] = appointment.patientId
             var dateInfo = [[String:Any]]()
@@ -166,7 +168,6 @@ class CliniqueManager: CliniqueManagerProtocol {
             }
             if i == 0
             {
-                //print("Enter the correct doctor ID.")
                 var info = [String:Any]()
                 info["patientId"] = appointment.patientId
                 var dateInfo = [[String:Any]]()
@@ -176,9 +177,243 @@ class CliniqueManager: CliniqueManagerProtocol {
                 dataAppointment["\(appointment.doctorId!)"] = doctorIdInfo
                 writeData(data: dataAppointment, path: Constants.pathAppointments)
             }
+        }
+        }else{
+            print("Enter the valid doctor ID.")
+            return
+        }
+    }
+    func searchDoctor(){
+        var i = 0
+        let data:[String:Any] = readData(path: Constants.pathDoctors) as! [String:Any]
+        print("1. Search doctor by Id.")
+        print("2. Search doctor by name.")
+        print("3. Search doctor br specialization.")
+        print("4. Search doctor by availability.")
+        print("Give your choice.")
+        let choice = readLine()!
+        switch choice {
+        case "1":
+            print("Enter the Doctor Id.")
+            let id = readLine()!
+            if let id = Int(id){
+                for (key,value) in data{
+                    if key == "\(id)"{
+                        i += 1
+                        if let doctorData:[String:Any] = value as? [String:Any]{
+                            for (key,value) in doctorData{
+                                print("\(key)  = \(value)")
+                            }
+                        }
+                    }
+                }
+                if i == 0{
+                    print("Doctor with entered id deos not exist.")
+                }
+                
+            }else{
+                print("Enter the integer value.")
+            }
+            break
+        case "2":
+            print("Enter the name of doctor you want to search.")
+            let name = readLine()!
+            for (key,value) in data{
+                if let doctorData:[String:Any] = value as? [String:Any]{
+                    for(key,value) in doctorData{
+                        if key == "name"{
+                            if name == value as! String{
+                                i += 1
+                                for (key,value) in doctorData{
+                                    print("\(key) = \(value)")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if i == 0{
+                print("Doctor with the entered name does not exist.")
+            }
+            break
+        case "3":
+            print("Enter the specializatin of doctor you want to search.")
+            let specialization = readLine()!
+            for (key,value) in data{
+                if let doctorData:[String:Any] = value as? [String:Any]{
+                    for(key,value) in doctorData{
+                        if key == "specialization"{
+                            if specialization == value as! String{
+                                i += 1
+                                for (key,value) in doctorData{
+                                    print("\(key) = \(value)")
+                                }
+                            }
+                        }
+                    }
+                }
+                print("\n")
+            }
+            if i == 0{
+                print("Doctor with the entered specialization does not exist.")
+            }
+            break
+        case "4":
+            print("Enter the availability of doctor you want to search.")
+            let availability = readLine()!
+            for (key,value) in data{
+                if let doctorData:[String:Any] = value as? [String:Any]{
+                    for(key,value) in doctorData{
+                        if key == "availability"{
+                            if availability == value as! String{
+                                i += 1
+                                for (key,value) in doctorData{
+                                    print("\(key) = \(value)")
+                                }
+                            }
+                        }
+                    }
+                }
+                print("\n")
+            }
+            if i == 0{
+                print("Doctor with the entered availability does not exist.")
+            }
+            break
             
-        
+        default:
+            print("Enter correct value.")
+        }
     }
-        
+    
+    func searchPatient() {
+        var i = 0
+        var data:[String:Any] = readData(path: Constants.pathPatients) as! [String:Any]
+        print("1. Search patient by ID.")
+        print("2. Search patient by name.")
+        print("3. Search patient by mobile number.")
+        print("4. Search patient by age.")
+        print("Enter the choice.")
+        let choice = readLine()!
+        switch choice {
+        case "1":
+            print("Enter the Patient Id.")
+            let id = readLine()!
+            if let id = Int(id){
+                for (key,value) in data{
+                    if key == "\(id)"{
+                        i += 1
+                        if let patientData:[String:Any] = value as? [String:Any]{
+                            for (key,value) in patientData{
+                                print("\(key)  = \(value)")
+                            }
+                        }
+                    }
+                }
+                if i == 0{
+                    print("Patient with entered id deos not exist.")
+                }
+                
+            }else{
+                print("Enter the integer value.")
+            }
+            break
+        case "2":
+            print("Enter the name of Patient you want to search.")
+            let name = readLine()!
+            for (key,value) in data{
+                if let patientData:[String:Any] = value as? [String:Any]{
+                    for(key,value) in patientData{
+                        if key == "name"{
+                            if name == value as! String{
+                                i += 1
+                                for (key,value) in patientData{
+                                    print("\(key) = \(value)")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if i == 0{
+                print("Patient with the entered name does not exist.")
+            }
+
+            break
+        case "3":
+            print("Enter the mobile number of Patient you want to search.")
+            let mobileNo = readLine()!
+            for (key,value) in data{
+                if let patientData:[String:Any] = value as? [String:Any]{
+                    for(key,value) in patientData{
+                        if key == "mobileNo"{
+                            if mobileNo == "\(value)"{
+                                i += 1
+                                for (key,value) in patientData{
+                                    print("\(key) = \(value)")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if i == 0{
+                print("Patient with the entered mobile number does not exist.")
+            }
+
+            break
+        case "4":
+            print("Enter the age of patient you want to search.")
+            let age = readLine()!
+            for (key,value) in data{
+                if let patientData:[String:Any] = value as? [String:Any]{
+                    for(key,value) in patientData{
+                        if key == "age"{
+                            if age == "\(value)"{
+                                i += 1
+                                for (key,value) in patientData{
+                                    print("\(key) = \(value)")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if i == 0{
+                print("Patient with the entered age does not exist.")
+            }
+
+            break
+        default:
+            print("Enter the correct value.")
+
+        }
+
     }
+    func showDoctors() {
+        let data:[String:Any] = readData(path: Constants.pathDoctors) as! [String:Any]
+        for (key,value) in data{
+            if let doctorData:[String:Any] = value as? [String:Any]
+            {
+                for (key,value) in doctorData{
+                    print("\(key) = \(value)")
+                }
+            }
+            print("\n")
+        }
+    }
+    func showPatients() {
+        let data:[String:Any] = readData(path: Constants.pathPatients) as! [String:Any]
+        for (key,value) in data{
+            if let patientData:[String:Any] = value as? [String:Any]
+            {
+                for (key,value) in patientData{
+                    print("\(key) = \(value)")
+                }
+            }
+            print("\n")
+        }
+    }
+    
+    
 }

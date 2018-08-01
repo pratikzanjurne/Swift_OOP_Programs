@@ -9,8 +9,9 @@ repeat{
     print("3.Take Appointment.")
     print("4.Search Doctor.")
     print("5.Search Patient.")
-    print("6.Display Patient/Doctor")
-    print("7.Exit.")
+    print("6.Show all Doctors.")
+    print("7.Show all Patients")
+    print("8.Exit.")
     print("Choose your option.")
     let choice = readLine()!
     if let choice = Int(choice){
@@ -26,12 +27,18 @@ repeat{
             manager.takeAppointment()
             break
         case 4:
+            manager.searchDoctor()
             break
         case 5:
+            manager.searchPatient()
             break
         case 6:
+            manager.showDoctors()
             break
         case 7:
+            manager.showPatients()
+            break
+        case 8:
             break
         default:
             print("Enter the correct choice.")
@@ -40,4 +47,4 @@ repeat{
         print("Enter an Integer value.")
     }
     
-}while x != 7
+}while x != 8

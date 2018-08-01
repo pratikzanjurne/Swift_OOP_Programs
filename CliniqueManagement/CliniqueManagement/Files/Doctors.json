@@ -1,2 +1,26 @@
 {
+  "234" : {
+    "name" : "Pratik",
+    "specialization" : "Heart",
+    "id" : 234,
+    "availability" : "AM"
+  },
+  "2" : {
+    "specialization" : "MA",
+    "id" : 2,
+    "availability" : "AM",
+    "name" : "Prasad"
+  },
+  "1" : {
+    "specialization" : "MD",
+    "id" : 1,
+    "availability" : "PM",
+    "name" : "Pratik"
+  },
+  "3" : {
+    "specialization" : "MBBS",
+    "id" : 3,
+    "availability" : "AM",
+    "name" : "Amit"
+  }
 }
