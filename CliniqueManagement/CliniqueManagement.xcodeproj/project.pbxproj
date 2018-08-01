@@ -28,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A05DDCA211174D5001DC578 /* Appointments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Appointments.json; sourceTree = "<group>"; };
 		0A561C0421107CDF00B14F11 /* CliniqueManagement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CliniqueManagement; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A561C0721107CDF00B14F11 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0A561C0E21107D0A00B14F11 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 			children = (
 				0A561C1521107F0900B14F11 /* Doctors.json */,
 				0A561C1621107F2100B14F11 /* Patients.json */,
+				0A05DDCA211174D5001DC578 /* Appointments.json */,
 			);
 			path = Files;
 			sourceTree = "<group>";
