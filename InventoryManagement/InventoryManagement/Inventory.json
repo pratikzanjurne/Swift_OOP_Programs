@@ -1,0 +1,22 @@
+[
+ {
+ "name":"Rice",
+ "weight":50,
+ "pricePerKg":40
+ },
+ {
+ "name":"Pulses",
+ "weight":100,
+ "pricePerKg":30
+ },
+ {
+ "name":"Wheats",
+ "weight":90,
+ "pricePerKg":20
+ }
+
+
+ 
+]
+    
+

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A057BF02111E51900EB3040 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A057BEF2111E51900EB3040 /* Utility.swift */; };
+		0A057BF22111EB5C00EB3040 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A057BF12111EB5C00EB3040 /* BaseObject.swift */; };
 		0A561C0821107CDF00B14F11 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C0721107CDF00B14F11 /* main.swift */; };
-		0A561C0F21107D0A00B14F11 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C0E21107D0A00B14F11 /* Doctor.swift */; };
+		0A561C0F21107D0A00B14F11 /* Doctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C0E21107D0A00B14F11 /* Doctors.swift */; };
 		0A561C1121107DA600B14F11 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C1021107DA600B14F11 /* Patient.swift */; };
 		0A561C1321107E8400B14F11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C1221107E8400B14F11 /* Constants.swift */; };
 		0A561C192110831B00B14F11 /* CliniqueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A561C182110831B00B14F11 /* CliniqueManager.swift */; };
@@ -28,10 +30,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A057BEF2111E51900EB3040 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		0A057BF12111EB5C00EB3040 /* BaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
 		0A05DDCA211174D5001DC578 /* Appointments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Appointments.json; sourceTree = "<group>"; };
 		0A561C0421107CDF00B14F11 /* CliniqueManagement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CliniqueManagement; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A561C0721107CDF00B14F11 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		0A561C0E21107D0A00B14F11 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		0A561C0E21107D0A00B14F11 /* Doctors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctors.swift; sourceTree = "<group>"; };
 		0A561C1021107DA600B14F11 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		0A561C1221107E8400B14F11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0A561C1521107F0900B14F11 /* Doctors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Doctors.json; sourceTree = "<group>"; };
@@ -72,11 +76,13 @@
 			children = (
 				0A561C1421107EC300B14F11 /* Files */,
 				0A561C0721107CDF00B14F11 /* main.swift */,
+				0A057BF12111EB5C00EB3040 /* BaseObject.swift */,
 				0A561C1021107DA600B14F11 /* Patient.swift */,
-				0A561C0E21107D0A00B14F11 /* Doctor.swift */,
+				0A561C0E21107D0A00B14F11 /* Doctors.swift */,
 				0A561C1221107E8400B14F11 /* Constants.swift */,
 				0A561C182110831B00B14F11 /* CliniqueManager.swift */,
 				0A561C1A2110989300B14F11 /* Appointment.swift */,
+				0A057BEF2111E51900EB3040 /* Utility.swift */,
 			);
 			path = CliniqueManagement;
 			sourceTree = "<group>";
@@ -149,10 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A561C0F21107D0A00B14F11 /* Doctor.swift in Sources */,
+				0A057BF02111E51900EB3040 /* Utility.swift in Sources */,
+				0A561C0F21107D0A00B14F11 /* Doctors.swift in Sources */,
 				0A561C0821107CDF00B14F11 /* main.swift in Sources */,
 				0A561C1121107DA600B14F11 /* Patient.swift in Sources */,
 				0A561C1B2110989300B14F11 /* Appointment.swift in Sources */,
+				0A057BF22111EB5C00EB3040 /* BaseObject.swift in Sources */,
 				0A561C1321107E8400B14F11 /* Constants.swift in Sources */,
 				0A561C192110831B00B14F11 /* CliniqueManager.swift in Sources */,
 			);

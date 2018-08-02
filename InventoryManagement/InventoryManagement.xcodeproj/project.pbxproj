@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A057BED2111CF6200EB3040 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A057BEC2111CF6200EB3040 /* Doctor.swift */; };
-		0AD8D0C6210EDA95000D61D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8D0C5210EDA95000D61D8 /* main.swift */; };
+		0AB554A32112DAE300B5FFC6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB554A22112DAE300B5FFC6 /* main.swift */; };
+		0AB554AA2112DDBD00B5FFC6 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB554A92112DDBD00B5FFC6 /* Inventory.swift */; };
+		0AB554AC2112DFD700B5FFC6 /* InventoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB554AB2112DFD700B5FFC6 /* InventoryManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0AD8D0C0210EDA95000D61D8 /* CopyFiles */ = {
+		0AB5549D2112DAE300B5FFC6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +25,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A057BEC2111CF6200EB3040 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
-		0A057BEE2111CFAC00EB3040 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		0AD8D0C2210EDA95000D61D8 /* roughwork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = roughwork; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AD8D0C5210EDA95000D61D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0AB5549F2112DAE300B5FFC6 /* InventoryManagement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InventoryManagement; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB554A22112DAE300B5FFC6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0AB554A92112DDBD00B5FFC6 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		0AB554AB2112DFD700B5FFC6 /* InventoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManager.swift; sourceTree = "<group>"; };
+		0AB554AE2112E0BA00B5FFC6 /* Inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Inventory.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AD8D0BF210EDA95000D61D8 /* Frameworks */ = {
+		0AB5549C2112DAE300B5FFC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,99 +43,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AD8D0B9210EDA95000D61D8 = {
+		0AB554962112DAE300B5FFC6 = {
 			isa = PBXGroup;
 			children = (
-				0AD8D0C4210EDA95000D61D8 /* roughwork */,
-				0AD8D0C3210EDA95000D61D8 /* Products */,
+				0AB554A12112DAE300B5FFC6 /* InventoryManagement */,
+				0AB554A02112DAE300B5FFC6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0AD8D0C3210EDA95000D61D8 /* Products */ = {
+		0AB554A02112DAE300B5FFC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AD8D0C2210EDA95000D61D8 /* roughwork */,
+				0AB5549F2112DAE300B5FFC6 /* InventoryManagement */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AD8D0C4210EDA95000D61D8 /* roughwork */ = {
+		0AB554A12112DAE300B5FFC6 /* InventoryManagement */ = {
 			isa = PBXGroup;
 			children = (
-				0AD8D0C5210EDA95000D61D8 /* main.swift */,
-				0A057BEC2111CF6200EB3040 /* Doctor.swift */,
-				0A057BEE2111CFAC00EB3040 /* data.json */,
+				0AB554A22112DAE300B5FFC6 /* main.swift */,
+				0AB554AB2112DFD700B5FFC6 /* InventoryManager.swift */,
+				0AB554A92112DDBD00B5FFC6 /* Inventory.swift */,
+				0AB554AE2112E0BA00B5FFC6 /* Inventory.json */,
 			);
-			path = roughwork;
+			path = InventoryManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0AD8D0C1210EDA95000D61D8 /* roughwork */ = {
+		0AB5549E2112DAE300B5FFC6 /* InventoryManagement */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AD8D0C9210EDA95000D61D8 /* Build configuration list for PBXNativeTarget "roughwork" */;
+			buildConfigurationList = 0AB554A62112DAE300B5FFC6 /* Build configuration list for PBXNativeTarget "InventoryManagement" */;
 			buildPhases = (
-				0AD8D0BE210EDA95000D61D8 /* Sources */,
-				0AD8D0BF210EDA95000D61D8 /* Frameworks */,
-				0AD8D0C0210EDA95000D61D8 /* CopyFiles */,
+				0AB5549B2112DAE300B5FFC6 /* Sources */,
+				0AB5549C2112DAE300B5FFC6 /* Frameworks */,
+				0AB5549D2112DAE300B5FFC6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = roughwork;
-			productName = roughwork;
-			productReference = 0AD8D0C2210EDA95000D61D8 /* roughwork */;
+			name = InventoryManagement;
+			productName = InventoryManagement;
+			productReference = 0AB5549F2112DAE300B5FFC6 /* InventoryManagement */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0AD8D0BA210EDA95000D61D8 /* Project object */ = {
+		0AB554972112DAE300B5FFC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Pratik Zanjurne";
 				TargetAttributes = {
-					0AD8D0C1210EDA95000D61D8 = {
+					0AB5549E2112DAE300B5FFC6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0AD8D0BD210EDA95000D61D8 /* Build configuration list for PBXProject "roughwork" */;
+			buildConfigurationList = 0AB5549A2112DAE300B5FFC6 /* Build configuration list for PBXProject "InventoryManagement" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0AD8D0B9210EDA95000D61D8;
-			productRefGroup = 0AD8D0C3210EDA95000D61D8 /* Products */;
+			mainGroup = 0AB554962112DAE300B5FFC6;
+			productRefGroup = 0AB554A02112DAE300B5FFC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AD8D0C1210EDA95000D61D8 /* roughwork */,
+				0AB5549E2112DAE300B5FFC6 /* InventoryManagement */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AD8D0BE210EDA95000D61D8 /* Sources */ = {
+		0AB5549B2112DAE300B5FFC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A057BED2111CF6200EB3040 /* Doctor.swift in Sources */,
-				0AD8D0C6210EDA95000D61D8 /* main.swift in Sources */,
+				0AB554AA2112DDBD00B5FFC6 /* Inventory.swift in Sources */,
+				0AB554AC2112DFD700B5FFC6 /* InventoryManager.swift in Sources */,
+				0AB554A32112DAE300B5FFC6 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0AD8D0C7210EDA95000D61D8 /* Debug */ = {
+		0AB554A42112DAE300B5FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +194,7 @@
 			};
 			name = Debug;
 		};
-		0AD8D0C8210EDA95000D61D8 /* Release */ = {
+		0AB554A52112DAE300B5FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +243,7 @@
 			};
 			name = Release;
 		};
-		0AD8D0CA210EDA95000D61D8 /* Debug */ = {
+		0AB554A72112DAE300B5FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +253,7 @@
 			};
 			name = Debug;
 		};
-		0AD8D0CB210EDA95000D61D8 /* Release */ = {
+		0AB554A82112DAE300B5FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -262,25 +266,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AD8D0BD210EDA95000D61D8 /* Build configuration list for PBXProject "roughwork" */ = {
+		0AB5549A2112DAE300B5FFC6 /* Build configuration list for PBXProject "InventoryManagement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AD8D0C7210EDA95000D61D8 /* Debug */,
-				0AD8D0C8210EDA95000D61D8 /* Release */,
+				0AB554A42112DAE300B5FFC6 /* Debug */,
+				0AB554A52112DAE300B5FFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AD8D0C9210EDA95000D61D8 /* Build configuration list for PBXNativeTarget "roughwork" */ = {
+		0AB554A62112DAE300B5FFC6 /* Build configuration list for PBXNativeTarget "InventoryManagement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AD8D0CA210EDA95000D61D8 /* Debug */,
-				0AD8D0CB210EDA95000D61D8 /* Release */,
+				0AB554A72112DAE300B5FFC6 /* Debug */,
+				0AB554A82112DAE300B5FFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0AD8D0BA210EDA95000D61D8 /* Project object */;
+	rootObject = 0AB554972112DAE300B5FFC6 /* Project object */;
 }
