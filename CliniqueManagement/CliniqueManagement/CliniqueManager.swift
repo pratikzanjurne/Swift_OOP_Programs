@@ -1,7 +1,6 @@
 import  Foundation
 protocol CliniqueManagerProtocol {
     func addDoctor()
-    func addPatient()
     func takeAppointment()
     func searchDoctor()
     func searchPatient()
@@ -29,7 +28,7 @@ class CliniqueManager: CliniqueManagerProtocol {
         print("Enter the specialization of Doctor.")
         doctor.specialization = readLine()!
         print("Enter the availability of Doctor:'AM','PM'or'Both'")
-        var input = readLine()!
+        let input = readLine()!
         if(input == "AM"||input == "PM"||input == "Both"){
         doctor.availability = input
         }else{
@@ -42,12 +41,12 @@ class CliniqueManager: CliniqueManagerProtocol {
         print("Doctor with name \(doctor.name!) added.")
     }
     
-    func addPatient() {
+    func addPatient(id :Int) {
         var patient = Patient()
         print("Enter the name of Patient.")
         patient.name = readLine()!
         print("Enter the id of Patient.")
-        patient.id = getnumber()
+        patient.id = id
         print("Enter the mobile number of Patient.")
         patient.mobileNo = getnumber()
         print("Enter the age of Patient.")
@@ -56,7 +55,7 @@ class CliniqueManager: CliniqueManagerProtocol {
         var data = utility.readData(path: Constants.pathPatients)
         data.append(patient)
         utility.writeData(path: Constants.pathPatients, data: data)
-        print("Doctor with name \(patient.name!) added successfully.")
+        print("\nPatient with name \(patient.name!) added successfully.\n")
     }
     
     func takeAppointment() {
@@ -99,9 +98,10 @@ class CliniqueManager: CliniqueManagerProtocol {
                 }
             }
             if count < 5{
+                addPatient(id : appointment.patientId!)
                 dataAppointment.append(appointment)
                 utilityA.writeData(path: Constants.pathAppointments, data: dataAppointment)
-                print("Your appintment with the doctor has been added.")
+                print("\nYour appintment with the doctor has been added.\n")
             }else{
                 print("All the 5 appointments of this doctor has been taken.")
             }

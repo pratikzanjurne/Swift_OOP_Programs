@@ -1,22 +1,57 @@
-[
- {
- "name":"Rice",
- "weight":50,
- "pricePerKg":40
- },
- {
- "name":"Pulses",
- "weight":100,
- "pricePerKg":30
- },
- {
- "name":"Wheats",
- "weight":90,
- "pricePerKg":20
- }
+{
+"Rice":[
+        {
+            "name":"Simple",
+            "quantity":50,
+            "price":40
+        },
+        {
+            "name":"Basmati",
+            "quantity":100,
+            "price":30
+        },
+        {
+            "name":"Indrayni",
+            "quantity":90,
+            "price":20
+        }
+        ],
+    "Pulses":[
+            {
+            "name":"Simple",
+            "quantity":50,
+            "price":40
+            },
+            {
+            "name":"Pulses1",
+            "quantity":100,
+            "price":30
+            },
+            {
+            "name":"Pulses2",
+            "quantity":90,
+            "price":20
+            }
+            ],
+    "Wheat":[
+            {
+            "name":"Simple",
+            "quantity":50,
+            "price":40
+            },
+            {
+            "name":"Wheat1",
+            "quantity":100,
+            "price":30
+            },
+            {
+            "name":"Wheat2",
+            "quantity":90,
+            "price":20
+            }
+            ]
 
 
- 
-]
+}
     
 

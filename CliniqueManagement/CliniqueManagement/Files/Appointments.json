@@ -8,5 +8,15 @@
     "date" : "07-07-2007",
     "doctorId" : 7,
     "patientId" : 12
+  },
+  {
+    "date" : "09-01-2018",
+    "doctorId" : 234,
+    "patientId" : 15
+  },
+  {
+    "date" : "1-2-2018",
+    "doctorId" : 2,
+    "patientId" : 14
   }
 ]

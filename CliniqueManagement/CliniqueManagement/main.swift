@@ -5,13 +5,12 @@ repeat{
     
     print("-------Clinique Management--------")
     print("1.Add Doctor.")
-    print("2.Add Patient.")
-    print("3.Take Appointment.")
-    print("4.Search Doctor.")
-    print("5.Search Patient.")
-    print("6.Show all Doctors.")
-    print("7.Show all Patients")
-    print("8.Exit.")
+    print("2.Take Appointment.")
+    print("3.Search Doctor.")
+    print("4.Search Patient.")
+    print("5.Show all Doctors.")
+    print("6.Show all Patients")
+    print("7.Exit.")
     print("Choose your option.")
     let choice = readLine()!
     if let choice = Int(choice){
@@ -21,24 +20,21 @@ repeat{
             manager.addDoctor()
             break
         case 2:
-            manager.addPatient()
-            break
-        case 3:
             manager.takeAppointment()
             break
-        case 4:
+        case 3:
             manager.searchDoctor()
             break
-        case 5:
+        case 4:
             manager.searchPatient()
             break
-        case 6:
+        case 5:
             manager.showDoctors()
             break
-        case 7:
+        case 6:
             manager.showPatients()
             break
-        case 8:
+        case 7:
             break
         default:
             print("Enter the correct choice.")
@@ -47,4 +43,4 @@ repeat{
         print("Enter an Integer value.")
     }
     
-}while x != 8
+}while x != 7

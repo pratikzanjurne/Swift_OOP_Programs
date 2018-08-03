@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AB554A32112DAE300B5FFC6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB554A22112DAE300B5FFC6 /* main.swift */; };
-		0AB554AC2112DFD700B5FFC6 /* InventoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB554AB2112DFD700B5FFC6 /* InventoryManager.swift */; };
-		0AB554B0211300EB00B5FFC6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB554AF211300EB00B5FFC6 /* Item.swift */; };
+		0AB554BE2113227B00B5FFC6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB554BD2113227B00B5FFC6 /* main.swift */; };
+		0AB554C62113259000B5FFC6 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB554C52113259000B5FFC6 /* Deck.swift */; };
+		0AB590582114217100DE3316 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB590572114217100DE3316 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0AB5549D2112DAE300B5FFC6 /* CopyFiles */ = {
+		0AB554B82113227B00B5FFC6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,15 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0AB5549F2112DAE300B5FFC6 /* InventoryManagement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InventoryManagement; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AB554A22112DAE300B5FFC6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		0AB554AB2112DFD700B5FFC6 /* InventoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManager.swift; sourceTree = "<group>"; };
-		0AB554AE2112E0BA00B5FFC6 /* Inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Inventory.json; sourceTree = "<group>"; };
-		0AB554AF211300EB00B5FFC6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		0AB554BA2113227B00B5FFC6 /* DeckOfCards */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeckOfCards; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB554BD2113227B00B5FFC6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0AB554C52113259000B5FFC6 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		0AB590572114217100DE3316 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AB5549C2112DAE300B5FFC6 /* Frameworks */ = {
+		0AB554B72113227B00B5FFC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,101 +42,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AB554962112DAE300B5FFC6 = {
+		0AB554B12113227B00B5FFC6 = {
 			isa = PBXGroup;
 			children = (
-				0AB554A12112DAE300B5FFC6 /* InventoryManagement */,
-				0AB554A02112DAE300B5FFC6 /* Products */,
+				0AB554BC2113227B00B5FFC6 /* DeckOfCards */,
+				0AB554BB2113227B00B5FFC6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0AB554A02112DAE300B5FFC6 /* Products */ = {
+		0AB554BB2113227B00B5FFC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AB5549F2112DAE300B5FFC6 /* InventoryManagement */,
+				0AB554BA2113227B00B5FFC6 /* DeckOfCards */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AB554A12112DAE300B5FFC6 /* InventoryManagement */ = {
+		0AB554BC2113227B00B5FFC6 /* DeckOfCards */ = {
 			isa = PBXGroup;
 			children = (
-				0AB554A22112DAE300B5FFC6 /* main.swift */,
-				0AB554AB2112DFD700B5FFC6 /* InventoryManager.swift */,
-				0AB554AE2112E0BA00B5FFC6 /* Inventory.json */,
-				0AB554AF211300EB00B5FFC6 /* Item.swift */,
+				0AB554BD2113227B00B5FFC6 /* main.swift */,
+				0AB554C52113259000B5FFC6 /* Deck.swift */,
+				0AB590572114217100DE3316 /* Card.swift */,
 			);
-			path = InventoryManagement;
+			path = DeckOfCards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0AB5549E2112DAE300B5FFC6 /* InventoryManagement */ = {
+		0AB554B92113227B00B5FFC6 /* DeckOfCards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AB554A62112DAE300B5FFC6 /* Build configuration list for PBXNativeTarget "InventoryManagement" */;
+			buildConfigurationList = 0AB554C12113227B00B5FFC6 /* Build configuration list for PBXNativeTarget "DeckOfCards" */;
 			buildPhases = (
-				0AB5549B2112DAE300B5FFC6 /* Sources */,
-				0AB5549C2112DAE300B5FFC6 /* Frameworks */,
-				0AB5549D2112DAE300B5FFC6 /* CopyFiles */,
+				0AB554B62113227B00B5FFC6 /* Sources */,
+				0AB554B72113227B00B5FFC6 /* Frameworks */,
+				0AB554B82113227B00B5FFC6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = InventoryManagement;
-			productName = InventoryManagement;
-			productReference = 0AB5549F2112DAE300B5FFC6 /* InventoryManagement */;
+			name = DeckOfCards;
+			productName = DeckOfCards;
+			productReference = 0AB554BA2113227B00B5FFC6 /* DeckOfCards */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0AB554972112DAE300B5FFC6 /* Project object */ = {
+		0AB554B22113227B00B5FFC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Pratik Zanjurne";
 				TargetAttributes = {
-					0AB5549E2112DAE300B5FFC6 = {
+					0AB554B92113227B00B5FFC6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0AB5549A2112DAE300B5FFC6 /* Build configuration list for PBXProject "InventoryManagement" */;
+			buildConfigurationList = 0AB554B52113227B00B5FFC6 /* Build configuration list for PBXProject "DeckOfCards" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0AB554962112DAE300B5FFC6;
-			productRefGroup = 0AB554A02112DAE300B5FFC6 /* Products */;
+			mainGroup = 0AB554B12113227B00B5FFC6;
+			productRefGroup = 0AB554BB2113227B00B5FFC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AB5549E2112DAE300B5FFC6 /* InventoryManagement */,
+				0AB554B92113227B00B5FFC6 /* DeckOfCards */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AB5549B2112DAE300B5FFC6 /* Sources */ = {
+		0AB554B62113227B00B5FFC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB554B0211300EB00B5FFC6 /* Item.swift in Sources */,
-				0AB554AC2112DFD700B5FFC6 /* InventoryManager.swift in Sources */,
-				0AB554A32112DAE300B5FFC6 /* main.swift in Sources */,
+				0AB554C62113259000B5FFC6 /* Deck.swift in Sources */,
+				0AB590582114217100DE3316 /* Card.swift in Sources */,
+				0AB554BE2113227B00B5FFC6 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0AB554A42112DAE300B5FFC6 /* Debug */ = {
+		0AB554BF2113227B00B5FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -194,7 +192,7 @@
 			};
 			name = Debug;
 		};
-		0AB554A52112DAE300B5FFC6 /* Release */ = {
+		0AB554C02113227B00B5FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +241,7 @@
 			};
 			name = Release;
 		};
-		0AB554A72112DAE300B5FFC6 /* Debug */ = {
+		0AB554C22113227B00B5FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -253,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		0AB554A82112DAE300B5FFC6 /* Release */ = {
+		0AB554C32113227B00B5FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +264,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AB5549A2112DAE300B5FFC6 /* Build configuration list for PBXProject "InventoryManagement" */ = {
+		0AB554B52113227B00B5FFC6 /* Build configuration list for PBXProject "DeckOfCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AB554A42112DAE300B5FFC6 /* Debug */,
-				0AB554A52112DAE300B5FFC6 /* Release */,
+				0AB554BF2113227B00B5FFC6 /* Debug */,
+				0AB554C02113227B00B5FFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AB554A62112DAE300B5FFC6 /* Build configuration list for PBXNativeTarget "InventoryManagement" */ = {
+		0AB554C12113227B00B5FFC6 /* Build configuration list for PBXNativeTarget "DeckOfCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AB554A72112DAE300B5FFC6 /* Debug */,
-				0AB554A82112DAE300B5FFC6 /* Release */,
+				0AB554C22113227B00B5FFC6 /* Debug */,
+				0AB554C32113227B00B5FFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0AB554972112DAE300B5FFC6 /* Project object */;
+	rootObject = 0AB554B22113227B00B5FFC6 /* Project object */;
 }
